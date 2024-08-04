@@ -5,12 +5,8 @@ import base64
 import os
 import sys
 
-from flask import Flask, request, jsonify, render_template
 import replicate
 from functools import wraps
-
-app = Flask(__name__)
-
 
 # Set the API endpoints
 IMGBB_API_ENDPOINT = "https://api.imgbb.com/1/upload"
