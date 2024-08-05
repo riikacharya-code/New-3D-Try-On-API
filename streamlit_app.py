@@ -42,7 +42,7 @@ def generate_3d_from_vton(data):
         if not api_token:
             st.error(f"Error: Must input API token")
 
-        print("Received new request for /generate_3d_from_vton", file=sys.stderr)
+        #print("Received new request for /generate_3d_from_vton", file=sys.stderr)
 
         os.environ["REPLICATE_API_TOKEN"] = api_token
         
