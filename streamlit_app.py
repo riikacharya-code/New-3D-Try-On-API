@@ -37,7 +37,6 @@ def run_vton(input, garm_list, category_list):
 
 def generate_3d_from_vton(data): 
     
-    try:
 
         api_token = data['api_token']
         if not api_token:
@@ -88,9 +87,6 @@ def generate_3d_from_vton(data):
 
         return dmg_output[1]
     
-    except Exception as e:
-        st.error(f"error {str(e)}")
-
 
 
 
